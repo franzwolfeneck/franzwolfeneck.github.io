@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Bob</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="fixed-header">
+      <div class="menu">
+        <div class="menu__line"></div>
+        <div class="menu__line"></div>
+        <div class="menu__line"></div>
+      </div>
+      <div class="logo">BOB</div>
+    </div>
+    <div class="content">
+      <div class="list">
+        <div class="list__header">
+          <div class="list__header__title">
+            New & <span>Noteworthy Books</span>
+          </div>
+          <div class="list__header__more">See All</div>
+        </div>
+        <div class="list__content">
+          {% include book.html %}
+          {% include book.html %}
+          {% include book.html %}
+        </div>
+      </div>
+      <div class="list">
+        <div class="list__header">
+          <div class="list__header__title">
+            Printing Soon
+          </div>
+          <div class="list__header__more">See All</div>
+        </div>
+        <div class="list__content">
+          {% include book.html %}
+          {% include book.html %}
+          {% include book.html %}
+        </div>
+      </div>
+      <div class="list">
+        <div class="list__header">
+          <div class="list__header__title">
+            Printing Has Started
+          </div>
+          <div class="list__header__more">See All</div>
+        </div>
+        <div class="list__content">
+          {% include book.html %}
+          {% include book.html %}
+          {% include book.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
